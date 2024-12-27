@@ -22,6 +22,7 @@ int main(int argc, char **argv)
         exit(1);
     }
 
+	//initial tape is all zeros
 	tape tp;
 	tp.num_cells = 100;
 	tp.cell = (int*)malloc(tp.num_cells*sizeof(int));
@@ -43,7 +44,7 @@ int main(int argc, char **argv)
 	printf("\033[1;32mProgram has halted sucesssfully.\033[1;0m");
 
 	//do i even need to free these at this point?
-	//dumbasses with their ohh you should always free the memory after allocating it, stfu book nerds y'ain't know shit about memory
+	//dumbasses are going to come with their ohh you should always free the memory after allocating it
 	//free(tp.cell);
 	//free(alan.states);
 	return 0;
